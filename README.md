@@ -52,18 +52,18 @@ breast_cancer/
 ├── report.ipynb
 └── requirements.txt
 
- Implemented Models
+Implemented Models
 Logistic Regression
-  Implemented using gradient descent optimization.
-  Utilizes sigmoid activation mapping for probability estimations.
-  Optimized via custom binary cross-entropy loss tracking.
+ Implemented using gradient descent optimization.
+ Utilizes sigmoid activation mapping for probability estimations.
+ Optimized via custom binary cross-entropy loss tracking.
 K-Nearest Neighbors (KNN)
-  Implemented using vectorized Euclidean distance computations.
-  Utilizes dynamic majority voting over local parameter spaces.
+ Implemented using vectorized Euclidean distance computations.
+ Utilizes dynamic majority voting over local parameter spaces.
 Decision Tree
-  Implemented using Shannon entropy calculations.
-  Splits tree branches based on maximizing localized Information Gain.
-  Supports recursive node building down to customizable depth parameters.
+ Implemented using Shannon entropy calculations.
+ Splits tree branches based on maximizing localized Information Gain.
+ Supports recursive node building down to customizable depth parameters.
 📊 Evaluation Metrics
 Implemented completely from scratch without external library imports:
 -Accuracy
@@ -72,11 +72,11 @@ Implemented completely from scratch without external library imports:
 -F1_score
 Confusion Matrix matrices
 📈 VisualizationsGenerated figures stored inside the workspace:
-  Feature distributions and variance evaluations
-  30-feature correlation heatmaps analyzing multi-collinearity
-  Training optimization loss curves for gradient descent convergence
-  Logistic Regression trained decision boundary contours in geometric feature spaces
-  Final model testing performance comparison charts
+ Feature distributions and variance evaluations
+ 30-feature correlation heatmaps analyzing multi-collinearity
+ Training optimization loss curves for gradient descent convergence
+ Logistic Regression trained decision boundary contours in geometric feature spaces
+ Final model testing performance comparison charts
 🚀 ResultsThe exact metrics logged during testing evaluations:
 Model,Accuracy,Precision,Recall,F1 Score
 Logistic Regression,0.9719,0.9841,0.9466,0.9649
