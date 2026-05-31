@@ -1,61 +1,109 @@
 # Breast Cancer Diagnosis Classification From Scratch
 
-A machine learning project implementing classical ML algorithms from scratch without using scikit-learn to classify breast cancer tumors.
+A machine learning project that implements classical ML algorithms **from scratch**, without using scikit-learn, to classify breast cancer tumors as **benign** or **malignant**.
+
+---
 
 ## 📌 Project Overview
 
-This project aims to classify breast cancer tumors as benign or malignant using handcrafted machine learning algorithms and a fully modular machine learning pipeline.
+This project aims to classify breast cancer tumors using handcrafted machine learning algorithms and a fully modular machine learning pipeline.
 
-**Implemented algorithms:**
+### Implemented Algorithms
+
 * Logistic Regression
 * K-Nearest Neighbors (KNN)
 * Decision Tree
 
-**The project includes:**
+### Project Features
+
 * Data preprocessing and feature correlation analysis
-* Evaluation metrics built entirely from scratch
+* Evaluation metrics implemented entirely from scratch
 * Structured experiment logging and performance tracking
-* Visualizations for decision boundaries and metric comparison
-**Implemented Models:**
+* Decision boundary and model comparison visualizations
 
-* Logistic Regression
- Implemented using gradient descent optimization.
- Utilizes sigmoid activation mapping for probability estimations.
- Optimized via custom binary cross-entropy loss tracking.
-* K-Nearest Neighbors (KNN)
- Implemented using vectorized Euclidean distance computations.
- Utilizes dynamic majority voting over local parameter spaces.
-* Decision Tree
- Implemented using Shannon entropy calculations.
- Splits tree branches based on maximizing localized Information Gain.
- Supports recursive node building down to customizable depth parameters.
-**Evaluation Metrics:**
-Implemented completely from scratch without external library imports:
--Accuracy
--Precision
--Recall
--F1_score
-Confusion Matrix matrices
+---
 
-**VisualizationsGenerated figures stored inside the workspace:**
- Feature distributions and variance evaluations
- 30-feature correlation heatmaps analyzing multi-collinearity
- Training optimization loss curves for gradient descent convergence
- Logistic Regression trained decision boundary contours in geometric feature spaces
- Final model testing performance comparison charts
-**Results:**
-The exact metrics logged during testing evaluations:
-Model,Accuracy,Precision,Recall,F1 Score
-Logistic Regression,0.9719,0.9841,0.9466,0.9649
-K-Nearest Neighbors,0.9807,0.0000,0.0000,0.0000
-Decision Tree,0.9415,0.9443,0.9234,0.9332
-**How to Run:**
-Install dependencies:
-  pip install -r requirements.txt
-2. Execute pipeline script
-Run the central execution pipeline script to process the training workflow and log your outputs:
-  python src/run.py
+## 🤖 Implemented Models
 
+### Logistic Regression
+
+* Implemented using Gradient Descent optimization
+* Uses the Sigmoid activation function for probability estimation
+* Optimized through a custom Binary Cross-Entropy loss function
+
+### K-Nearest Neighbors (KNN)
+
+* Implemented using vectorized Euclidean distance calculations
+* Uses dynamic majority voting among nearest neighbors
+
+### Decision Tree
+
+* Implemented using Shannon Entropy
+* Splits nodes based on Information Gain maximization
+* Supports recursive tree construction with customizable depth
+
+---
+
+## 📊 Evaluation Metrics
+
+All evaluation metrics were implemented from scratch without relying on external machine learning libraries.
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
+
+---
+
+## 📈 Visualizations
+
+Generated figures stored in the workspace include:
+
+* Feature distribution analysis
+* Feature variance evaluation
+* Correlation heatmaps (30 features)
+* Gradient Descent loss convergence curves
+* Logistic Regression decision boundaries
+* Model performance comparison charts
+
+---
+
+## 🏆 Results
+
+| Model               | Accuracy | Precision | Recall | F1-Score |
+| ------------------- | -------: | --------: | -----: | -------: |
+| Logistic Regression |   0.9719 |    0.9841 | 0.9466 |   0.9649 |
+| K-Nearest Neighbors |   0.9807 |    0.0000 | 0.0000 |   0.0000 |
+| Decision Tree       |   0.9415 |    0.9443 | 0.9234 |   0.9332 |
+
+---
+
+## 🚀 How to Run
+
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Execute the Pipeline
+
+Run the central execution script:
+
+```bash
+python src/run.py
+```
+
+This will:
+
+* Load and preprocess the dataset
+* Train all implemented models
+* Evaluate performance metrics
+* Generate visualizations
+* Store experiment logs and results
+
+---
 
 ## 📂 Project Structure
 
@@ -88,7 +136,37 @@ breast_cancer/
 │   ├── metrics.py
 │   ├── run.py
 │   └── utils.py
+│
 ├── README.md
 ├── report.ipynb
 └── requirements.txt
+```
 
+---
+
+## 🔧 Technologies Used
+
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Jupyter Notebook
+
+---
+
+## 🎯 Learning Objectives
+
+This project was developed to better understand:
+
+* Machine Learning fundamentals
+* Optimization using Gradient Descent
+* Distance-based learning algorithms
+* Entropy and Information Gain
+* Model evaluation metrics
+* Building ML pipelines from scratch
+
+---
+
+## 📜 License
+
+This project is intended for educational and research purposes.
