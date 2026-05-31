@@ -53,7 +53,9 @@ Decision Tree,0.9415,0.9443,0.9234,0.9332
 Install dependencies:
   pip install -r requirements.txt
 2. Execute pipeline script
-Run the central execution pipeline sc
+Run the central execution pipeline script to process the training workflow and log your outputs:
+  python src/run.py
+
 
 ## 📂 Project Structure
 
@@ -90,5 +92,3 @@ breast_cancer/
 ├── report.ipynb
 └── requirements.txt
 
-ript to process the training workflow and log your outputs:
-  python src/run.py
