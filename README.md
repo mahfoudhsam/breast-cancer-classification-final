@@ -166,7 +166,7 @@ This project was developed to better understand:
 * Building ML pipelines from scratch
 
 ---
-👉 [Open Report](./report.ipynb)
+👉 [Open Report]([./report.ipynb](https://nbviewer.org/github/mahfoudhsam/breast-cancer-classification-final/blob/main/report.ipynb))
 ---
 ## 📜 License
 
