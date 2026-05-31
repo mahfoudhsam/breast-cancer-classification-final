@@ -1,0 +1,10 @@
+# Ignore specific unwanted experiment notebooks
+notebooks/experiments.ipynb
+
+# Ignore Python runtime cache directories
+**/__pycache__/
+*.pyc
+
+# Ignore local environment checkouts or temporary system files
+.DS_Store
+.ipynb_checkpoints/

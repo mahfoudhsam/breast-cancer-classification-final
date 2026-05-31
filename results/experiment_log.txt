@@ -1,0 +1,17 @@
+=== ML Experiment Log ===
+Dataset Shape: (569, 30)
+
+--- Logistic Regression ---
+Confusion Matrix:
+[[204   2]
+ [  8 355]]
+
+--- Decision Tree ---
+Confusion Matrix:
+[[209   0]
+ [  3 357]]
+
+--- K-Nearest Neighbors ---
+Confusion Matrix:
+[[0 0]
+ [0 0]]

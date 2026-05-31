@@ -1,4 +1,5 @@
 import numpy as np
+from metrics import accuracy,confusion_matrix,precision,recall,f1_score
 
 class LogisticRegression:
     def __init__(self, learning_rate=0.01, iterations=10000):
@@ -69,3 +70,13 @@ class LogisticRegression:
             g = self._sigmoid(z)
             preds[i] = 1 if g >= 0.5 else 0
         return preds
+    def evaluate(self,X,y):
+        y_pred = self.predict(X)
+        return {
+            'model': 'Logistic Regression',
+            'accuracy': accuracy(y,y_pred),
+            'confusion_matrix': confusion_matrix(y,y_pred),
+            'precision': precision(y,y_pred),
+            'recall': recall(y,y_pred),
+            'f1_score': f1_score(y,y_pred)
+        }

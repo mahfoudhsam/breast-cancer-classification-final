@@ -1,4 +1,5 @@
 import numpy as np
+from metrics import accuracy,confusion_matrix,precision,recall,f1_score
 
 class Node:
     def __init__(self, feature=None, threshold=None, left=None, right=None, *, value=None):
@@ -119,3 +120,12 @@ class DecisionTree:
         if x[node.feature] <= node.threshold:
             return self._traverse_tree(x, node.left)
         return self._traverse_tree(x, node.right)
+    def evaluate(self, X, y):
+        y_pred = self.predict(X)
+        return {"model": "Decision Tree",
+                "accuracy": accuracy(y, y_pred),
+                "precision": precision(y, y_pred),
+                "recall": recall(y, y_pred),
+                "f1_score": f1_score(y, y_pred),
+                "confusion_matrix": confusion_matrix(y, y_pred)
+            }
