@@ -166,7 +166,8 @@ This project was developed to better understand:
 * Building ML pipelines from scratch
 
 ---
-
+👉 [Open Report](./report.ipynb)
+---
 ## 📜 License
 
 This project is intended for educational and research purposes.
